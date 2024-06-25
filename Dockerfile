@@ -53,7 +53,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /app/node_modules/.cache
 
 # Exposed container port, the default is 3000, which can be modified through the environment variable PORT
-EXPOSE ${PORT:-3000}
+EXPOSE ${PORT:-8083}
 
 # Set the environment variable CHROME_PATH to specify the path to the Chromium binaries
 ENV CHROME_PATH='/usr/bin/chromium'
